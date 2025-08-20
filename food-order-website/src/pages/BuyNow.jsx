@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
+
 export default function BuyNow() {
     useEffect(() => {
         const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
