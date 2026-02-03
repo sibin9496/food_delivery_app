@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: food-order-website
+    runtime: node
+    plan: free
+    root: food-order-website
+    buildCommand: cd food-order-website && npm install && npm run build
+    startCommand: cd food-order-website && npm install -g serve && serve -s dist -l 3000
+    envVars:
+      - key: NODE_VERSION
+        value: 18.17.0
