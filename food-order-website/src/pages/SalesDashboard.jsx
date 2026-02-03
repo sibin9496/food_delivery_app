@@ -31,7 +31,7 @@ export default function SalesDashboard() {
     const ordersPerDay = () => {
         const map = {};
         orders.forEach(order => {
-            const date = new Date(order.timestamp).toLocaleDateString();
+            const date = order.date || new Date(order.timestamp || Date.now()).toLocaleDateString();
             map[date] = (map[date] || 0) + 1;
         });
         return map;
