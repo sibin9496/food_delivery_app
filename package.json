@@ -1,0 +1,13 @@
+{
+  "name": "food-delivery-app-root",
+  "version": "1.0.0",
+  "description": "Root package.json that redirects to food-order-website",
+  "private": true,
+  "scripts": {
+    "install": "cd food-order-website && npm install",
+    "build": "cd food-order-website && npm run build",
+    "dev": "cd food-order-website && npm run dev",
+    "start": "npm install -g serve && cd food-order-website && serve -s dist -l 3000",
+    "preview": "cd food-order-website && npm run preview"
+  }
+}

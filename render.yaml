@@ -3,9 +3,8 @@ services:
     name: food-order-website
     runtime: node
     plan: free
-    root: food-order-website
-    buildCommand: npm install && npm run build
-    startCommand: npm install -g serve && serve -s dist -l 3000
+    buildCommand: npm run build
+    startCommand: npm start
     envVars:
       - key: NODE_VERSION
         value: 18.17.0
