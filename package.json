@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Root package.json that redirects to food-order-website",
   "private": true,
+  "engines": {
+    "node": "20.10.0"
+  },
   "scripts": {
     "install": "cd food-order-website && npm install",
     "build": "cd food-order-website && npm run build",
