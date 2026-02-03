@@ -7,6 +7,7 @@ export default function AddProduct() {
         price: "",
         image: "",
         cuisine: "",
+        rating: "4.5",
         stock: "",
     });
 
@@ -35,6 +36,7 @@ export default function AddProduct() {
             price: "",
             image: "",
             cuisine: "",
+            rating: "4.5",
             stock: "",
         });
     };
@@ -48,7 +50,7 @@ export default function AddProduct() {
                 </h2>
 
                 <form onSubmit={handleAddProduct} className="space-y-6">
-                    {["name", "price", "image", "cuisine", "stock"].map((field) => (
+                    {["name", "price", "image", "cuisine", "rating", "stock"].map((field) => (
                         <div key={field}>
                             <label className="block mb-1 font-semibold text-gray-700 capitalize">
                                 {field.replace("_", " ")}

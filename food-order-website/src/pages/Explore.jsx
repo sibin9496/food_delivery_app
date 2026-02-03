@@ -72,7 +72,9 @@ export default function Explore() {
                     ].map((filter) => (
                         <button
                             key={filter.key}
-                            onClick={() => setFilterType(filter.key)}
+                            onClick={() =>
+                                setFilterType(filterType === filter.key ? null : filter.key)
+                            }
                             className={`border px-4 py-2 rounded-full text-sm ${filterType === filter.key ? "bg-red-500 text-white border-red-500" : "border-gray-300 hover:bg-gray-100"}`}
                         >
                             {filter.label}

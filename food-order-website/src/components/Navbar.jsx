@@ -34,7 +34,7 @@ export default function Navbar() {
                         )}
                     </Link>
 
-                    <Link to="/register" className={navLinkClass("/login")}>Login</Link>
+                    <Link to="/login" className={navLinkClass("/login")}>Login</Link>
 
                     <Link to="/account" className="flex items-center gap-1 group">
                         <UserCircle className="w-5 h-5 text-gray-700 group-hover:text-red-500" />
